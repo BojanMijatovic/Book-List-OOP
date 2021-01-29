@@ -1,0 +1,25 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4rem;
+    width: 100vw;
+    //  single group
+    &__group {
+        margin: 2rem 0;
+        display: flex;
+        align-items: center;
+        //  title
+        .__title {
+            font-size: 2rem;
+            margin: 0 1rem;
+        }
+        // input
+        .input {
+            border: none;
+            font-size: 1.5rem;
+            padding: 0.5rem;
+            color: $indigo-blue;
+        }
+    }
+}

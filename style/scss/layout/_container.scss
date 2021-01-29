@@ -1,0 +1,14 @@
+@import '../core/variables';
+@import '../core/reset';
+@import '../components/title';
+@import '../components/form';
+@import '../components/buttons';
+.container {
+    width: 90vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10rem auto 2rem;
+}
