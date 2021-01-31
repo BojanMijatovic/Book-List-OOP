@@ -26,12 +26,13 @@ class UI {
     static addBookToList(book) {
         const list = document.querySelector('.bookList');
         const newBook = document.createElement('div');
+        newBook.classList.add('book');
         //  create new book 
         newBook.innerHTML = `
-         <p>${book.title}</p>
-         <p>${book.author}</p>
-         <p>${book.isbn}</p>
-         <span><a href="#" class="delete-book">x</a> </span>
+         <p class="book__title">${book.title} - </p>
+         <p class="book__author">${book.author} - </p>
+         <p class="book__isbn">${book.isbn}</p>
+         <span class="book__delete"><a href="#" class="book__delete__a">x</a> </span>
         `;
         list.append(newBook);
     }
@@ -45,7 +46,7 @@ class UI {
 
     //  remove single Book from arr
     static removeBook(el) {
-        if (el.classList.contains('delete-book')) {
+        if (el.classList.contains('book__delete__a')) {
             el.parentElement.parentElement.remove();
         }
     }

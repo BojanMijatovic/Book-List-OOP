@@ -1,10 +1,24 @@
 .app-title {
     font-size: 3rem;
     font-weight: 700;
+    //  responsive
+    //  medium
+    @include media-md {
+        font-size: 4rem;
+    }
+    // large
+    @include media-large {
+        margin-top: 3rem;
+        font-size: 5.4rem;
+    }
     .fas {
         margin-right: 1rem;
     }
     .__text {
         margin-right: 6rem;
+        //  responsive
+        @include media-md {
+            margin-right: 0rem;
+        }
     }
 }

@@ -1,8 +1,10 @@
 @import '../core/variables';
 @import '../core/reset';
+@import '../core/responsive';
 @import '../components/title';
 @import '../components/form';
-@import '../components/book-list';
+@import '../layout/book-list';
+@import '../layout/book';
 @import '../components/buttons';
 @import './alert';
 .container {
@@ -11,5 +13,4 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 2rem 0;
 }

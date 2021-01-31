@@ -5,6 +5,11 @@
     justify-content: center;
     margin: 1rem 1rem 3rem;
     width: 100vw;
+    //  responsive
+    @include media-large {
+        margin: 1rem 0;
+        width: 85vw;
+    }
     //  single group
     &__group {
         margin: 1rem;
@@ -15,6 +20,10 @@
         .__title {
             font-size: 1.6rem;
             margin-bottom: 0.5rem;
+            //  responsive
+            @include media-md {
+                font-size: 2rem;
+            }
         }
         // input
         .input {
