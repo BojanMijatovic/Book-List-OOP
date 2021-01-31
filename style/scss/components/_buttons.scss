@@ -10,7 +10,7 @@
     margin: 1.5rem 0;
     // large
     @include media-large {
-        width: 50vw;
+        width: 15vw;
     }
     // large
     @include media-extra-lg {
@@ -19,6 +19,8 @@
     &:active,
     &:hover {
         cursor: pointer;
+        background-color: $very-dark-blue;
+        color: $light-blue;
     }
     &:focus {
         outline: none;

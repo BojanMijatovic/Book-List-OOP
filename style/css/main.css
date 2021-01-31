@@ -87,7 +87,6 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 90vw;
   margin: 0 1rem 1.5rem; }
   .book__title {
     font-size: 1.6rem;
@@ -137,12 +136,14 @@ a {
   margin: 1.5rem 0; }
   @media only screen and (min-width: 1200px) {
     .submit-button {
-      width: 50vw; } }
+      width: 15vw; } }
   @media only screen and (min-width: 1440px) {
     .submit-button {
       width: 10vw; } }
   .submit-button:active, .submit-button:hover {
-    cursor: pointer; }
+    cursor: pointer;
+    background-color: #012a4a;
+    color: #a9d6e5; }
   .submit-button:focus {
     outline: none; }
 
