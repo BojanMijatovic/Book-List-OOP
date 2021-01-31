@@ -1,0 +1,24 @@
+.alert {
+    &__danger {
+        background-color: $light-blue;
+        color: $very-dark-blue;
+        font-size: 1.4rem;
+        padding: 0.5rem;
+        width: 50vw;
+        margin: 1.5rem;
+        text-align: center;
+        font-weight: 700;
+        border-radius: 0.6rem;
+    }
+    &__success {
+        background-color: $indigo-light-blue;
+        color: $white;
+        font-size: 1.4rem;
+        padding: 0.5rem;
+        width: 50vw;
+        margin: 1.5rem;
+        text-align: center;
+        font-weight: 700;
+        border-radius: 0.6rem;
+    }
+}

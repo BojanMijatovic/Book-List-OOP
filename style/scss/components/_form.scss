@@ -2,17 +2,19 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 4rem;
+    justify-content: center;
+    margin: 1rem 1rem 3rem;
     width: 100vw;
     //  single group
     &__group {
-        margin: 2rem 0;
+        margin: 1rem;
         display: flex;
-        align-items: center;
+        flex-direction: column;
+        align-items: flex-start;
         //  title
         .__title {
-            font-size: 2rem;
-            margin: 0 1rem;
+            font-size: 1.6rem;
+            margin-bottom: 0.5rem;
         }
         // input
         .input {
@@ -20,6 +22,10 @@
             font-size: 1.5rem;
             padding: 0.5rem;
             color: $indigo-blue;
+            width: 50vw;
+            &:focus {
+                outline: none;
+            }
         }
     }
 }

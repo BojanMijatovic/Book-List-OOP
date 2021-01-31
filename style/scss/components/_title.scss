@@ -1,4 +1,10 @@
-.title {
-    font-size: 3.5rem;
+.app-title {
+    font-size: 3rem;
     font-weight: 700;
+    .fas {
+        margin-right: 1rem;
+    }
+    .__text {
+        margin-right: 6rem;
+    }
 }
