@@ -67,19 +67,21 @@ class UI {
 // Store Class  local storage
 class Store {
     static getBooks() {
-        let books;
-        if (localStorage.getItem('books') === null) {
-            books = [];
-        } else {
-            books = JSON.parse(localStorage.getItem('books'));
+            let books;
+            if (localStorage.getItem('books') === null) {
+                books = [];
+            } else {
+                books = JSON.parse(localStorage.getItem('books'));
+            }
+            return books;
         }
-        return books;
-    }
+        //  add books
     static addBook(book) {
-        const books = Store.getBooks();
-        books.push(book);
-        localStorage.setItem('books', JSON.stringify(books));
-    }
+            const books = Store.getBooks();
+            books.push(book);
+            localStorage.setItem('books', JSON.stringify(books));
+        }
+        //  remove books
     static removeBook(isbn) {
         const books = Store.getBooks();
         books.forEach((book, index) => {
@@ -122,7 +124,7 @@ bookForm.addEventListener('submit', (e) => {
         UI.showAlert('Book added', 'success');
 
         //  Clear form fields
-        UI.clearFields()
+        UI.clearFields();
     }
 
 })
@@ -131,13 +133,9 @@ bookForm.addEventListener('submit', (e) => {
 bookList.addEventListener('click', (e) => {
     UI.removeBook(e.target)
 
-
     //  remove from local store
     Store.removeBook(e.target.parentElement.previousElementSibling.textContent);
 
     //  message after delete a book
     UI.showAlert('book  removed', 'success');
-
-
-
 })
