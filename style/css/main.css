@@ -141,9 +141,7 @@ a {
     .submit-button {
       width: 10vw; } }
   .submit-button:active, .submit-button:hover {
-    cursor: pointer;
-    background-color: #012a4a;
-    color: #a9d6e5; }
+    cursor: pointer; }
   .submit-button:focus {
     outline: none; }
 

@@ -131,9 +131,13 @@ bookForm.addEventListener('submit', (e) => {
 bookList.addEventListener('click', (e) => {
     UI.removeBook(e.target)
 
-    //  message after delete a book
-    UI.showAlert('book  removed', 'success');
 
     //  remove from local store
     Store.removeBook(e.target.parentElement.previousElementSibling.textContent);
+
+    //  message after delete a book
+    UI.showAlert('book  removed', 'success');
+
+
+
 })
