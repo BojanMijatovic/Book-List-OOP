@@ -138,6 +138,9 @@ a {
   @media only screen and (min-width: 1200px) {
     .submit-button {
       width: 50vw; } }
+  @media only screen and (min-width: 1440px) {
+    .submit-button {
+      width: 20vw; } }
   .submit-button:active, .submit-button:hover {
     cursor: pointer; }
   .submit-button:focus {

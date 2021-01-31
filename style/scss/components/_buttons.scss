@@ -12,6 +12,10 @@
     @include media-large {
         width: 50vw;
     }
+    // large
+    @include media-extra-lg {
+        width: 20vw;
+    }
     &:active,
     &:hover {
         cursor: pointer;
